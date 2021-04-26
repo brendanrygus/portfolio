@@ -5,7 +5,6 @@ import {
   Button,
   Grid,
   HeadingStroke,
-  Link,
   Paragraph,
   Relative,
   Stack,
