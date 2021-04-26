@@ -32,8 +32,7 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "chromatic": "npx chromatic --project-token pftg6v8z2i",
-    "lint:workflows": "yamllint .github/workflows/*.yml",
-    "postbuild": "react-snap"
+    "lint:workflows": "yamllint .github/workflows/*.yml"
   },
   "eslintConfig": {
     "extends": "react-app",
