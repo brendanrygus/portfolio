@@ -6,7 +6,7 @@ import { getFlagFromQueryParams } from "./feature-flags.utils";
 // Set flags at runtime based on user preferences, or query param overrides
 const FEATURE_FLAGS = {
   darkModeDefault: getFlagFromQueryParams("darkMode", userPrefersDark()),
-  unlocked: getFlagFromQueryParams("unlocked", false)
+  unlocked: getFlagFromQueryParams("unlocked", true),
 };
 
 const FeatureFlagContext = React.createContext({});

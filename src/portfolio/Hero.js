@@ -8,7 +8,7 @@ import {
   Link,
   Paragraph,
   Relative,
-  Stack
+  Stack,
 } from "components";
 import { Content } from "content";
 import { HeaderOffset } from "Header";
@@ -24,8 +24,7 @@ const ImageOverlay = styled(Block)`
   bottom: 0%;
   left: 0;
   right: 0;
-  ${({ isHovered, theme }) =>
-    isHovered ? theme.imageOverlayHover : theme.imageOverlay};
+  ${({ theme }) => theme.imageOverlay};
 `;
 ImageOverlay.displayName = "ImageOverlay";
 
@@ -103,15 +102,8 @@ export const Hero = () => {
                       <Content id="portfolio.heroSubtitle" />
                     </Paragraph>
                     <Paragraph fontFamily="secondary" fontSize={3}>
-                      Currently building next-generation web apps at{" "}
-                      <Link
-                        href="http://rangle.io"
-                        target="_blank"
-                        rel="noreferrer"
-                        variant="Flat"
-                      >
-                        Rangle.io
-                      </Link>
+                      Currently building the future of commerce and fulfillment
+                      as a <strong>Senior Frontend Developer at Shopify</strong>
                       .
                     </Paragraph>
                   </Skeleton>
